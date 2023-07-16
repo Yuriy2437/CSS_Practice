@@ -62,6 +62,9 @@
         font-size: 0.9rem;
         margin: 0.438rem 0 1.1rem;
         line-height: 1.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       .form {
@@ -124,7 +127,9 @@
         }
 
         .text {
-          white-space: nowrap;
+          white-space: normal;
+          overflow: visible;
+          text-overflow: unset;
         }
 
         .form {
