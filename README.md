@@ -6,4 +6,6 @@
 
 [Event Card](https://yuriy2437.github.io/CSS_Practice/event_card/index.html)
 
-[Subscribe Card](https://yuriy2437.github.io/CSS_Practice/subscribe_card/index5.html)
+[Subscribe Card](https://yuriy2437.github.io/CSS_Practice/subscribe_card/index.html)
+
+[Subscribe Media](https://yuriy2437.github.io/CSS_Practice/subscribe_media/index5.html)
