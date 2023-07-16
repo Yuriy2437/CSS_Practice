@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subscribe Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="new_reset.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vidaloka&display=swap");
+
+      html {
+        font-size: 16px;
+      }
+
+      @media (min-width: 576px) and (max-width: 2500px) {
+        .card {
+          flex-direction: column;
+        }
+
+        .photo {
+          height: 5rem;
+          background-image: url("Honey-garlic-chicken-meal-prep-6.jpg");
+          background-size: cover;
+        }
+
+        .content {
+          padding: 1.19rem 1.56rem 1.56rem 1.25rem;
+        }
+
+        /*.form {
+          flex-direction: column;
+        }*/
+
+        .form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .form_style {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .email {
+          /* padding: 0.6rem 1rem 0.9em 1.438rem; */
+          /* padding: 0.75rem 1.2rem 0.75rem 1.2rem; */
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      :root {
+        --main-bg-color: #303037;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #3c3c44;
+      }
+
+      .card {
+        display: flex;
+        border-radius: 1rem;
+        background-color: var(--main-bg-color);
+        color: #132152;
+        outline: 0.5rem solid #303037;
+        border-top: 0.01rem solid #3a3a3a;
+        border-right: 0.01rem solid #3a3a3a;
+      }
+
+      .photo {
+        background-image: url("Honey-garlic-chicken-meal-prep-6.jpg");
+        background-size: cover;
+      }
+
+      .photo:not(@media (min-width: 576px) and (max-width: 2500px) .photo) {
+        width: 12.5rem;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        padding: 3.4rem 3.94rem 3.6rem 2.33rem;
+      }
+
+      .header {
+        font-family: "Vidaloka", serif;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 0.625rem;
+      }
+
+      .text {
+        font-family: "Roboto", sans-serif;
+        color: #f3f3f3;
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin: 0.438rem 0 1.1rem;
+        line-height: 1.6;
+      }
+
+      .form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .form_style {
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        border: 0.0625rem solid;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .email {
+        background-color: var(--main-bg-color);
+        color: #fff;
+        border-color: #6a6a6c;
+        height: 2.94rem;
+        /* padding: 0.6rem 1rem 0.9em 1.438rem; */
+        margin-right: 0.5rem;
+      }
+
+      .email:not(@media (min-width: 576px) and (max-width: 2500px) .photo) {
+        width: 15rem;
+      }
+
+      .btn {
+        background-color: #91c809;
+        color: #3d5603;
+        height: 2.94rem;
+        /* padding: 0.875rem 1.438rem; */
+      }
+
+      .btn:hover {
+        background-color: #f3d704;
+      }
+
+      .btn:active {
+        background-color: #e62503;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="photo"></div>
+        <div class="content">
+          <p class="header">Get diet and fitness tips in your inbox</p>
+          <p class="text">
+            Eat better and exercise better. Sign up for the <br />
+            Diet&Fitness newsletter.
+          </p>
+          <div class="form">
+            <input type="email" class="email form_style" placeholder="Enter your email address" />
+            <a href="https://user-images.githubusercontent.com/30548361/248798887-21bf58b0-121d-4b12-83aa-b476992a5cb5.png" class="btn form_style">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
