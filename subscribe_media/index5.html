@@ -104,10 +104,15 @@
         background-color: #e62503;
       }
 
-      @media (min-width: 300px) and (max-width: 359px) {
+      @media (min-width: 100px) and (max-width: 499px) {
         .card {
-          width: 80%;
+          width: 70%;
         }
+
+        .photo {
+          height: 22vh;
+        }
+
         .form {
           display: flex;
           flex-direction: column;
@@ -130,7 +135,15 @@
         }
       }
 
-      @media (min-width: 360px) and (max-width: 370px) {
+      @media (min-width: 500px) and (max-width: 800px) {
+        .card {
+          width: 80%;
+        }
+
+        .photo {
+          height: 30vh;
+        }
+
         .form {
           display: flex;
           flex-direction: row;
@@ -147,7 +160,7 @@
           text-align: center;
         }
       }
-      @media (min-width: 300px) and (max-width: 359px), (min-width: 360px) and (max-width: 370px) {
+      @media (min-width: 100px) and (max-width: 499px), (min-width: 500px) and (max-width: 800px) {
         .card {
           display: flex;
           flex-direction: column;
@@ -158,7 +171,6 @@
         .photo {
           width: 100%;
           box-sizing: border-box;
-          height: 22vh;
           background-image: url("Honey-garlic-chicken-meal-prep-6.jpg");
           background-size: cover;
         }
