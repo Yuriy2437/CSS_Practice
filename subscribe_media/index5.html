@@ -104,9 +104,47 @@
         background-color: #e62503;
       }
 
-      @media (min-width: 360px) and (max-width: 370px) {
+      @media (min-width: 300px) and (max-width: 359px) {
         .card {
           width: 80%;
+        }
+        .form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .form_style {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      @media (min-width: 360px) and (max-width: 370px) {
+        .form {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .form_style {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      @media (min-width: 300px) and (max-width: 359px), (min-width: 360px) and (max-width: 370px) {
+        .card {
+          /* width: 80%; */
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -129,7 +167,7 @@
           display: none;
         }
 
-        .form {
+        /*.form {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -143,7 +181,7 @@
           justify-content: center;
           align-items: center;
           text-align: center;
-        }
+        }*/
 
         .email {
           width: 100%;
