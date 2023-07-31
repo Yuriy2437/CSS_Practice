@@ -27,21 +27,22 @@
 
       .card {
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
         border-radius: 1rem;
         background-color: var(--main-bg-color);
         color: #132152;
-        outline: 0.5rem solid #303037;
+        outline: 0.5rem solid var(--main-bg-color);
         border-top: 0.01rem solid #3a3a3a;
         border-right: 0.01rem solid #3a3a3a;
       }
 
       .photo {
-        width: 100%;
+        /* width: 100%;
         box-sizing: border-box;
-        height: 30vh;
+        height: 30vh; */
+        width: 12.5rem;
         background-image: url("Honey-garlic-chicken-meal-prep-6.jpg");
         background-size: cover;
       }
@@ -49,78 +50,147 @@
       .content {
         display: flex;
         flex-direction: column;
-        padding: 10%;
+        /* padding: 10%; */
+        padding: 3.4rem 3.94rem 3.6rem 2.33rem;
       }
 
       .header {
-        font-family: "Vidaloka", serif;
+        font: 600 1.4rem "Vidaloka", sans-serif;
+        /* font-family: "Vidaloka", serif; */
         color: #fff;
-        font-size: 1.4rem;
-        font-weight: 600;
+        /* font-size: 1.4rem;
+        font-weight: 600; */
         margin-bottom: 0.625rem;
       }
 
       .text {
-        font-family: "Roboto", sans-serif;
+        font: 500 0.9rem "Roboto", sans-serif;
+        /* font-family: "Roboto", sans-serif; */
         color: #f3f3f3;
-        font-weight: 500;
-        font-size: 0.9rem;
+        /* font-weight: 500;
+        font-size: 0.9rem; */
         margin: 0.438rem 0 1.1rem;
         line-height: 1.6;
       }
 
-      .text br {
+      /* .text br {
         display: none;
-      }
+      } */
 
       .form {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        text-align: center;
       }
 
       .form_style {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        font-family: "Roboto", sans-serif;
+        text-align: center; */
+        /* font-family: "Roboto", sans-serif; */
+        font: 600 0.9rem "Roboto", sans-serif;
         text-decoration: none;
         border: 0.0625rem solid;
         border-radius: 0.3rem;
-        font-weight: 600;
-        font-size: 0.9rem;
+        /* font-weight: 600;
+        font-size: 0.9rem; */
       }
 
       .email {
         background-color: var(--main-bg-color);
         color: #fff;
         border-color: #6a6a6c;
+        width: 15rem;
         height: 2.94rem;
-        width: 100%;
-        text-align: center;
+        padding: 0.6rem 1rem 0.9em 1.438rem;
         margin-right: 0.5rem;
-        padding: 0;
       }
 
       .btn {
         background-color: #91c809;
         color: #3d5603;
-        height: 2.94rem;
-        width: 100%;
-        text-align: center;
-        padding: 0;
+        padding: 0.875rem 1.438rem;
       }
 
       .btn:hover {
-        background-color: #f3d704;
+        background-color: #709c02;
       }
 
       .btn:active {
-        background-color: #e62503;
+        background-color: #4a6701;
+      }
+
+      @media (max-width: 499px) {
+        .card {
+          width: 70%;
+        }
+
+        .photo {
+          height: 22vh;
+        }
+
+        .form,
+        .form_style {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .email {
+          margin-bottom: 1rem;
+          margin-left: 0.5rem;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 800px) {
+        .card {
+          width: 80%;
+        }
+
+        .photo {
+          height: 30vh;
+        }
+
+        .form,
+        .form_style {
+          flex-direction: row;
+        }
+      }
+      @media (max-width: 800px) {
+        .card {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .photo {
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        .content {
+          padding: 12%;
+        }
+
+        .text br {
+          display: none;
+        }
+
+        .email {
+          width: 100%;
+          text-align: center;
+          padding: 0;
+        }
+
+        .btn {
+          width: 100%;
+          text-align: center;
+          padding: 0;
+        }
       }
     </style>
   </head>
